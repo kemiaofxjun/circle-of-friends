@@ -15,7 +15,7 @@
 #   - stellar：stellar主题
 # 支持配置多个友链页面并指定不同主题策略，每个用{}分隔，它们会被同时爬取，数据保存在一起。
 LINK: [
-     { link: "https://www.yyyzyyyz.cn/link/", theme: "butterfly" },  # 友链页地址1，修改为你的友链页地址
+     { link: "https://myboke.kemiaosw.top/links/", theme: "butterfly" },  # 友链页地址1，修改为你的友链页地址
 #     { link: "https://noionion.top/link/", theme: "butterfly" }, # 友链页地址2
     # { link: "https://immmmm.com/about/", theme: "common1" }, # 友链页地址3
 #     ...
@@ -84,8 +84,8 @@ DEPLOY_TYPE: "github"
 # 文章摘要
 # 参考: https://fcircle-doc.yyyzyyyz.cn/#/settings
 GENERATE_SUMMARY: {
-  enabled: false,
-  provider: "all",  # AI供应商，目前可选：gemini|siliconflow|bigmodel|all （使用 "all" 依次全部尝试）
+  enabled: true,
+  provider: "all"，  # AI供应商，目前可选：gemini|siliconflow|bigmodel|all （使用 "all" 依次全部尝试）
   max_concurrent: 3,       # 最大并发数，默认3 (平衡速度与稳定性)
   wait_on_rate_limit: true, # 遇限速是否等待，默认true (提高成功率)
   max_chars: 8000,         # 最大字符数，默认8000 (适合大部分模型)
